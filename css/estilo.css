@@ -1,39 +1,114 @@
-.carrusel{
-    width: 90%;
-    max-width: 120em;
-    background-color: aqua;
-}
-
-.carrusel .grande{
-    width: 200%;
-    background-color: brown;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.carrusel .img{
-    width: 100px;
-    height: 100px;
-    background-color: aquamarine;
+/* normalizacion */
+body{
+    margin: 0;
+    background-color: gray;
 
 }
 
-.carrusel .puntos{
+*{
+    box-sizing: border-box;
+}
+p, h1, h2, h3{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 14px;
+    color: black;
+    margin: 6px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul, ol{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+/* estilo para el cabecera */
+/*----------------------------------------------------------------------------------*/
+#cajonCabecera{
     width: 100%;
-    background-color: yellow;
-    padding: 1em;
-    display: flex;
-    flex-flow: row nowrap;
+    background-color: #141D45;
+    /*display: flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;*/
 }
 
-.carrusel .punto{
-    width: 2em;
-    height: 2em;
-    background-color: blue;
-    margin: 1em;
-
+.cajonfoto{
+    width: 100%;
+    /*background-color: aqua;*/
+    display: flex;
+    justify-content: center;
 }
+
+.cajonfoto .img{
+    margin-top: 25px;
+    width: 800px;
+    height: auto;
+    border: none;
+}
+
+/* estilo para barra de navegacion */
+/*----------------------------------------------------------------------------------*/
+#cajaNav{
+    width: 100%;
+    /*background-color: rgb(17, 209, 0);*/
+    display: flex;
+    margin: auto;
+}
+
+.menu{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    margin-top: 25px;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu a{
+    display: block;
+    line-height: 30px;
+    padding: 0 30px;
+    color: rgb(0, 0, 0);
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.menu a i{
+    padding-right: 7px;
+}
+
+.menu a:hover{
+    background-color: #141D45;
+    color: white;
+    border-radius: 3px 4px;
+    border-bottom: 3px solid rgb(203, 0, 0);
+}
+
+/*.red{
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+}
+
+.blue{
+    height: 500px;
+    background-color: white;
+}
+/*----------------------------------------------------------------------------------*/
+/*.red{
+    background-color: rgb(103, 0, 0)  ;
+}*/
