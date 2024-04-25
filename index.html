@@ -16,27 +16,83 @@
             <div class="cajonfoto">
                 <img class="img" src="img/logo ilustrator.png" alt="">
             </div>
+            <!--barra de navegacion-->
             <div id="cajaNav">
                 <nav class="menu">
                     <ul>
                         <li>
-                           <a href=""><i class="fa-solid fa-house"></i>Inicio</a>
+                           <a href=""><!--<i class="fa-solid fa-house"></i> -->INICIO</a>
                         </li>
                         <li>
-                            <a href=""><i class="fa-solid fa-map"></i></i>Tours</a>
+                            <a href=""><!--<i class="fa-solid fa-map"></i></i>-->TOURS</a>
                         </li>
                         <li>
-                            <a href=""><i class="fa-solid fa-bus"> </i>Viajes Express</a>
+                            <a href=""><!--<i class="fa-solid fa-bus"> </i>-->VIAJES EXPRESS</a>
                         </li>
                         <li>
-                            <a href=""><i class="fa-solid fa-map-pin"></i>Rutas</a>
+                            <a href=""><!--<i class="fa-solid fa-map-pin">--></i>RUTAS</a>
                         </li>
                         <li>
-                           <a href=""><i class="fa-solid fa-photo-film"></i>Galeria</a>
+                           <a href=""><!--<i class="fa-solid fa-photo-film"></i>-->GALERIA</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
+        <!--seccion de video-->
+        <div class="cajonVideo">
+            <video class="video" src="videos/promocional.mp4" controls muted></video>
+        </div>
+        
+        <!--seccion quienes somos-->
+        <div class="tema"><h1><b>QUIENES SOMOS</b></h1></div>
+        <div class="cajonQuienes">
+            <div class="cardMision">
+                <h1><b>MISIÓN</b></h1>
+                <p>
+                    Facilitar la expanción y operatividad de nuestros clientes al actuar como intermediario, brindando
+                    soluciones que potencien sus relaciones comerciales.
+                </p>
+            </div>
+            <div class="cardVision">
+                <h1><b>VISIÓN</b></h1>
+                <p>
+                    Ser reconocidos como el principal facilitador y socio estratégico para empresas de diversos
+                    sectores, conectándolas de manera efectiva para maximizar oportunidades de negocio.
+                </p>
+            </div>
+            <div class="cardValores">
+                <h1><b>VALORES</b></h1>
+                <p>
+                    DIOS<br>Respeto<br>Disciplina<br>Puntualidad<br>Responsabilidad<br>Proactividad
+                </p>
+            </div>
+        </div>
+
+        <!--seccion empleo-->
+        <div class="temaEm"><h1><b>EMPLEO</b></h1></div>
+        <div class="cajonEmpleo">
+            <div class="cajonImg">
+                <img class="imgg" src="img/icono.png" alt="">
+            </div>
+            <div class="cajonForm">
+                <form action="">
+                    <label for="Name">Nombre:</label>
+                    <input type="text" placeholder="Nombre:"><br>
+                    <label for="correo">Correo: </label>
+                    <input type="email" placeholder="Correo: "><br>
+                    <label for="phone">Telefono:</label>
+                    <input type="tel" placeholder="Telefono"><br>
+                    <label for="tipoEmpleo">Selecciona el puesto a Aplicar: </label>
+                    <select id="TipoEmpleo">
+                        <option value="#">Motorista</option>
+                        <option value="#">Mecanico</option>
+                        <option value="#">Despacho</option>
+                    </select>
+                    <br>
+                    <input type="submit" value="Enviar" class="enviar">
+                </form>
+            </div>
+        </div>
     </body>
 </html>
