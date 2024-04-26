@@ -554,7 +554,7 @@ h4 {
     100%{ margin-left: -300%;}
 }
 
-@media(max-width:991px;){
+@media(max-width:991px){
     body{
         padding: 30px;
     }
