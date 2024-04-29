@@ -497,14 +497,17 @@ h4 {
 /*--------------------------------------*/
 /*SECCION DE GALERIA*/
 /*--------------------------------------*/
-.r252{
+
+
+.galeri{
     width: 1100px;
     height: auto;
     margin: 50px auto 0;
     overflow: hidden;
+    background-color: white;
 }
 
-.r252 ul{
+.galeri ul{
     background-color: white;
      display: flex;
      padding: 0;
@@ -512,7 +515,7 @@ h4 {
      animation: slide 10s infinite alternate ease-in-out; 
 }
 
-.r252 li{
+.galeri li{
     background-color: white;
     width: 100%;
     list-style: none;
@@ -534,7 +537,7 @@ h4 {
     margin-bottom: 15px;
 }
 
-.r252 img{
+.galeri img{
      width: 1000px;
      height: 500px;
 
@@ -555,11 +558,12 @@ h4 {
 }
 
 @media(max-width:991px){
-    body{
-        padding: 30px;
-    }
+   
     
-    .r252 {
+    .galeri {
         width: 100%;
     }
 }
+
+
+
