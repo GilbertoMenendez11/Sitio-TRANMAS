@@ -146,6 +146,7 @@ ul, ol{
     justify-content: space-evenly;
     margin: auto;
     background-color: #babbbd;
+    border-bottom: solid 3px #961b1e;
 }
 
 .cardMision, .cardVision, .cardValores{
@@ -170,6 +171,7 @@ ul, ol{
 }
 
 .tema{
+    border-top: solid 3px #961b1e;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -194,9 +196,9 @@ ul, ol{
     width: 1000px;
     height: 420px;
     display: flex;
+    flex: 1;
     justify-content: space-evenly;
     align-items: center;
-    color: #141D45;
     margin: auto;
     border: 10px solid #961b1e;
     margin-bottom: 25px;
