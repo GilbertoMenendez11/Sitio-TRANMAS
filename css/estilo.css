@@ -7,26 +7,35 @@ body{
 *{
     box-sizing: border-box;
 }
-h1, h2, h3{
+ h2, h3{
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
+    color: black;
     font-variation-settings: "wdth" 100;
     font-size: 25px;
-    color: black;
     margin: 6px;
+}
+h1{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    color: black
+    font-variation-settings: "wdth" 100;
+    font-size: 25px;
+    margin: 6px;
+
 }
 
 p{
     font-family: "Open Sans", sans-serif;
+    color: black;
     font-optical-sizing: auto;
-    font-weight: 100;
     font-style: normal;
     font-variation-settings: "wdth" 100;
-    font-size: 17px;
-    color: black;
-    margin: 6px;
+    font-size: 15px;
 }
 
 a{
@@ -78,7 +87,7 @@ ul, ol{
     width: 100%;
     height: 50px;
     background-color: white;
-    margin-top: 25px;
+    /*margin-top: 25px;*/
 }
 
 .menu ul{
@@ -102,21 +111,27 @@ ul, ol{
 }
 
 .menu a:hover{
-    color: rgb(203, 0, 0);
-    border-bottom: 3px solid rgb(203, 0, 0);
+    color: #961b1e;
+    border-bottom: 3px solid #961b1e;
+}
+
+.caja{
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/forest.jpg);
 }
 
 .cajonVideo{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
+    display: inline-block; 
+    width: 45%; 
+    margin: 10px; 
 }
 
 .cajonVideo video{
-    width: 85%;
-    height: 85%;
-    border-radius: 3px 4px;
+    width: 100%;
+    height: 400px;
+    /*border-radius: 20px;
+    border: 1px solid #141D45;*/
 }
 
 /*---------------------------------------------------------------*/
@@ -130,8 +145,8 @@ ul, ol{
     display: flex;
     justify-content: space-evenly;
     margin: auto;
-    background-image: none;
-    background-color: #e3e3e3;
+    background-color: #babbbd;
+    border-bottom: solid 3px #961b1e;
 }
 
 .cardMision, .cardVision, .cardValores{
@@ -141,25 +156,29 @@ ul, ol{
     flex-direction: column;
     width: 25%;
     padding: auto;
-    border: 1px solid gray;
+    border: 1px solid black;
     border-radius: 30px 30px;
     text-align: center;
     line-height: 30px;
-    background-color: white;
+    /**background-color: white;*//
 }
 
 .cardMision:hover, .cardVision:hover, .cardValores:hover{
+    color: white;
+    background-color: #961b1e;
     box-shadow: 0 0 11px rgba(27, 26, 26, 0.2);
-    border-bottom: 3px solid #141D45;
+    transition: all .5s ease-in-out;
 }
 
 .tema{
+    border-top: solid 3px #961b1e;
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-top: 50px;
     padding-top: 1em;
-    background-color: #e3e3e3;
+    background-color: #babbbd;
+    font-weight: bold;
 }
 
 /*---------------------------------------------------------------*/
@@ -175,24 +194,23 @@ ul, ol{
 
 .cajonEmpleo{
     width: 1000px;
+    height: 420px;
     display: flex;
-    justify-content: center;
+    flex: 1;
     justify-content: space-evenly;
+    align-items: center;
     margin: auto;
+    border: 10px solid #961b1e;
     margin-bottom: 25px;
-    border: solid 1px;
     padding-top: 25px;
     padding-bottom: 25px;
-    align-items: center;
     border-radius: 30px 30px;
-    /*background-color: aqua;*/
 }
 
 .cajonImg{
-    width: 420px;
-    height: 310px;
+    width: 200px;
+    height: 125px;
     /*background-color: blueviolet;*/
-    display: flex;
 }
 
 .cajonImg .imgg{
@@ -201,19 +219,30 @@ ul, ol{
 }
 
 .cajonForm{
-    /*background-color: green;*/
-    max-width: 900px; 
+    background-color: #141D45;
+    width: 475px;
+    height: 375px;
     display: flex;
+    justify-content: center;
     font-family: "Open Sans", sans-serif;
-    border: solid 1px;
+    border: 1px solid;
     border-radius: 30px 30px;
-    line-height: 50px;
-    padding: 2em;
+    padding: 1em;
+    box-shadow: 0 0 11px rgba(27, 26, 26, 0.2);
+}
+
+.cajonForm label{
+    color: white;
+    width: 50%;
+}
+
+.cajonForm input{
+    border: solid 1px;
+    width:300px;
 }
 
 
-
-/*Explora nuestros destinos*/
+/**********************Explora nuestros destinos*********************/
 .video-container {
     text-align: center; 
   }
@@ -237,7 +266,7 @@ ul, ol{
     margin: 10px; 
   }
   
-  iframe {
+  .video iframe {
     width: 100%;
     height: 200px;
     border-radius: 20px;
@@ -359,7 +388,7 @@ ul, ol{
     padding-left: 12em;
 }
 
-form {
+.formTour {
     max-width: 900px; 
     margin-left: auto; 
     margin-right: auto;
@@ -369,6 +398,7 @@ form {
 }
 
 label {
+    font-family: "Open Sans", sans-serif;
     width: 100px;
     margin-right: 10px;
     margin-bottom: 5px;
@@ -404,6 +434,7 @@ select {
 
 .enviar:hover {
     background-color: rgb(104, 10, 3);
+    transition: all .5s ease-in-out;
 }
 
 /*------------------------------------*/
@@ -459,7 +490,8 @@ select {
   }
   
   .vote-btn:hover {
-    background-color: rgb(203, 0, 0);
+    background-color: #961b1e;
+    transition: all .5s ease-in-out;
   }
 /*------------------------------------*/
 
@@ -488,6 +520,7 @@ footer {
 }
 
 h4 {
+    font-family: "Open Sans", sans-serif;
     margin: 10px 0;
 }
 
@@ -504,11 +537,12 @@ h4 {
     height: auto;
     margin: 50px auto 0;
     overflow: hidden;
-    background-color: white;
+    
+    
 }
 
 .galeri ul{
-    background-color: white;
+    
      display: flex;
      padding: 0;
      width: 300%;
@@ -516,46 +550,100 @@ h4 {
 }
 
 .galeri li{
-    background-color: white;
-    width: 100%;
+   
+    width: 50%;
     list-style: none;
     position: relative;
+   
+}
+#imagenes {
+    width: 80%; 
+    max-width: 600px; 
+    margin: 30px auto; 
+    overflow: hidden;
+}
+#imagenes ul {
+    display: flex;
+    padding: 0;
+    width: 300%; 
+    animation: slide 10s infinite alternate ease-in-out;
+}
+
+#imagenes li{
+    width: 80%;
+    list-style: none;
+    position: relative;
+  }
+  
+  #imagenes img{
+    width: 90%;
+        width: 500px;  
+        height: 350px;  
+    
+  }
+
+#contenedor{
+   
+
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 20px;
+    border: 4px solid #141D45;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .texto{
+    flex: 1;
+    padding-left: 30px;
+    text-align: center; 
+    margin-left: 50px;
 
-    align-items: baseline;
-    position: static;
-    text-align: center;
-    padding: 0 250px;
-    top: 250px;
-    color:black;
+    
 }
 
 .texto h2{
-    font-size: 25px;
+    background-color: #141D45;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 35px; 
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+p{
+    margin-top: 20px; 
     margin-bottom: 15px;
+    text-align: center; 
+
+    margin-top: 10px;
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 23px;
 }
 
-.galeri img{
-     width: 1000px;
-     height: 500px;
 
-     
-} 
-@keyframes slide {
-    0%{margin-left: 0;}
-    20%{ margin-left: 0;}
-
-    25%{ margin-left: -100%;}
-    45%{ margin-left: -100%;}
-
-    50%{ margin-left: -200%;}
-    70%{ margin-left: -200%;}
-
-    75%{ margin-left: -300%;}
-    100%{ margin-left: -300%;}
-}
+ @keyframes slide{
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+  }
 
 @media(max-width:991px){
    
@@ -565,5 +653,10 @@ h4 {
     }
 }
 
+<<<<<<< HEAD
+=======
+/*SECCION DE VIAJES EXPRESS*/
+
+>>>>>>> 444be86711b1805f99c03d5c6892b1574517cb7d
 
 
