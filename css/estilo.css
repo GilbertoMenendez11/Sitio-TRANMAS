@@ -22,7 +22,7 @@ h1{
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
-    color: black
+    color: black;
     font-variation-settings: "wdth" 100;
     font-size: 25px;
     margin: 6px;
@@ -51,28 +51,52 @@ ul, ol{
 /*-----------------------------------------------------------------------------------*/
 /* estilo para el cabecera */
 /*----------------------------------------------------------------------------------*/
-#cajonCabecera{
+#cajonCabecera {
     width: 100%;
     background-color: #141D45;
-    /*display: flex;
-    justify-content: center;
-    flex-direction: column;*/
+    /* Removed display, justify-content, and flex-direction properties */
 }
 
-.cajonfoto{
+.cajonfoto {
     width: 100%;
-    /*background-color: aqua;*/
     display: flex;
     justify-content: center;
     margin-top: 25px;
 }
 
-.cajonfoto .img{
+.cajonfoto .img {
     margin-top: 25px;
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     height: auto;
     border: none;
 }
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .cajonfoto .img {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 992px) {
+    .cajonfoto .img {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cajonfoto .img {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cajonfoto .img {
+        max-width: 300px;
+    }
+}
+
 /*-----------------------------------------------------------------------------------*/
 /* estilo para barra de navegacion */
 /*----------------------------------------------------------------------------------*/
@@ -88,6 +112,26 @@ ul, ol{
     height: 50px;
     background-color: white;
     /*margin-top: 25px;*/
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+.menu.active {
+    display: flex;
+    background-color: #961b1e;
+    height: 300px;
 }
 
 .menu ul{
@@ -114,6 +158,97 @@ ul, ol{
     color: #961b1e;
     border-bottom: 3px solid #961b1e;
 }
+
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        padding: 20px;
+        position: absolute;
+        top: 70px; /* Ajusta la posición vertical del menú */
+        left: 0;
+        width: 100%;
+        z-index: 999; /* Asegura que el menú esté por encima de otros elementos */
+        transition: top 0.3s ease; /* Agrega una transición suave al desplegar/ocultar el menú */
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .menu a {
+        padding: 10px 0;
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 20px; /* Ajusta la posición vertical del botón de hamburguesa */
+        right: 20px; /* Ajusta la posición horizontal del botón de hamburguesa */
+        z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+    }
+}
+
+
+/* styles.css */
+
+@media screen and (max-width: 480px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        padding: 20px;
+        position: absolute;
+        top: 70px; /* Ajusta la posición vertical del menú */
+        left: 0;
+        width: 100%;
+        z-index: 999; /* Asegura que el menú esté por encima de otros elementos */
+        transition: top 0.3s ease; /* Agrega una transición suave al desplegar/ocultar el menú */
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .menu a {
+        padding: 10px 0;
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 20px; /* Ajusta la posición vertical del botón de hamburguesa */
+        right: 20px; /* Ajusta la posición horizontal del botón de hamburguesa */
+        z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+    }
+}
+
+
+
 
 .caja{
     display: flex;

@@ -1,3 +1,9 @@
+/*Menu Hamburguesa */
+function toggleMenu() {
+  var menu = document.querySelector('.menu');
+  menu.classList.toggle('active');
+}
+
 let slideIndex = 0;
 carousel();
 
@@ -11,3 +17,4 @@ function carousel() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(carousel, 4000); // Cambiar imagen cada 2 segundos
 }
+
