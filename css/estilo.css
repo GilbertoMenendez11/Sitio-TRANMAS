@@ -955,5 +955,111 @@ p{
 
 /*SECCION DE VIAJES EXPRESS*/
 
-
+.containerviajes {
+    background-color: #ffffff; 
+    border: 8px solid #141D45; 
+    border-radius: 10px;
+    margin-left: 25%;
+    padding: 20px;
+    
+    width: 1000px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }
+  
+  label2 {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-size:xx-large;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="date"],
+  input[type="text"],
+  input[type="number"],
+  input[type="time"],
+  input[type="tel"],
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 3px solid #141D45; 
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    background-color: #141D45; /* Botón azul */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  input[type="submit"]{
+    width: 150px;
+    margin-left: 25%;
+    
+  }
+  
+  input[type="submit"]:hover {
+    background-color:  #961b1e; 
+  }
+  
+  input:focus,
+  select:focus {
+    outline: none;
+    border-color: #141D45; 
+    box-shadow: 0 0 5px  #961b1e; 
+  }
+  
+  ::placeholder {
+    color: #aaaaaa; 
+  }
+  @media screen and (max-width: 700px) {
+     .containerviajes {
+      flex-direction: column;
+    }
+  }
+/* Media Queries para hacer la página responsive */
+@media (max-width: 1200px) {
+    .containerviajes {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .containerviajes {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .containerviajes {
+      width: 90%;
+      padding: 15px;
+    }
+    
+    label {
+      font-size: large; /* Ajusta el tamaño de fuente en pantallas más pequeñas */
+    }
+    
+    input[type="submit"] {
+      width: 100%; /* Botón a ancho completo en pantallas pequeñas */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .containerviajes {
+      width: 95%;
+      padding: 10px;
+    }
+    
+    label {
+      font-size: medium; /* Ajusta aún más el tamaño de fuente */
+    }
+  }
 
