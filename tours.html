@@ -35,86 +35,84 @@
     </header>
 
     <div class="video-container">
-        <h2 id="expl">EXPLORA NUESTROS DESTINOS</h2>
-        <div class="video">
+      <h2 id="expl">EXPLORA NUESTROS DESTINOS</h2>
+      <div class="video">
           <iframe src="/videos/promocional.mp4" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="video">
-          <iframe src="/videos/promocional.mp4" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="video">
-          <iframe src="/videos/promocional.mp4" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="video">
-          <iframe src="/videos/promocional.mp4" frameborder="0" allowfullscreen></iframe>
-        </div>
       </div>
-
-      
-      <div class="tour-container">
-        <div class="tour-details">
+      <div class="video">
+          <iframe src="/videos/promocional.mp4" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+          <iframe src="/videos/promocional.mp4" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+          <iframe src="/videos/promocional.mp4" frameborder="0" allowfullscreen></iframe>
+      </div>
+  </div>
+  
+  <div class="tour-container">
+      <div class="tour-details">
           <h2 class="pt">PRÓXIMO TOUR</h2>
           <div class="tour-info">
-            <p><strong>Fecha:</strong> 2024-05-12</p>
-            <p><strong>Nombre:</strong> Excursión al Lago Coatepeque</p>
-            <p><strong>Destino:</strong> Lago Coatepeque</p>
-            <p><strong>Precio:</strong> $50</p>
+              <p><strong>Fecha:</strong> 2024-05-12</p>
+              <p><strong>Nombre:</strong> Excursión al Lago Coatepeque</p>
+              <p><strong>Destino:</strong> Lago Coatepeque</p>
+              <p><strong>Precio:</strong> $50</p>
           </div>
-        </div>
-        <div class="slider-box">
-          <ul>
-            <li>
-              <img src="img/GUANACOS-LAGO-DE-COATEPEQUE-3-1024x648.jpg" alt="img1">
-            </li>
-            <li>
-              <img src="img/lago-de-coatepeque.jpg" alt="img2">
-            </li>
-            <li>
-              <img src="img/lake-coatepeque.jpg" alt="img3">
-            </li>
-          </ul>
-        </div>
       </div>
-
-    <section id="ReservaCupo">
-        <h2 id="em">RESERVA TU CUPO</h2>
-   <div class="contenido">
-       <form class="formTour" action="">
-           <label for="Name">Nombre:</label>
-           <input type="text" placeholder="Nombre:"><br>
-           <label for="correo">Correo: </label>
-           <input type="email" placeholder="Correo: "><br>
-           <label for="phone">Telefono: </label>
-           <input type="tel" placeholder="Telefono"><br>
-           <label for="tipoEmpleo">Método de pago: </label>
-           <select id="TipoEmpleo">
-               <option value="Tarjeta">Tarjeta</option>
-               <option value="Efectivo">Efectivo</option>
-               <option value="BitCoin">BitCoin</option>
-           </select>
-           <br>
-           <input type="submit" value="Enviar" class="enviar">
-       </form>
-   </div>
-  </section>
-
-  <div class="voting-carousel">
-    <h2 class="ot">OFERTAS TURÍSTICAS</h2>
-    <div class="carousel-slide">
-      <label for="option1"><img src="img/GUANACOS-LAGO-DE-COATEPEQUE-3-1024x648.jpg" alt="Opción 1"></label>
-    </div>
-    <div class="carousel-slide">
-      <label for="option2"><img src="img/lago-de-coatepeque.jpg" alt="Opción 2"></label>
-    </div>
-    <div class="carousel-slide">
-      <label for="option3"><img src="img/lake-coatepeque.jpg" alt="Opción 3"></label>
-    </div>
-    <div class="carousel-slide">
-      <label for="option4"><img src="img/maxresdefault.jpg" alt="Opción 4"></label>
-    </div>
-    <button class="vote-btn">VOTAR</button>
+      <div class="slider-box">
+          <ul>
+              <li>
+                  <img src="img/GUANACOS-LAGO-DE-COATEPEQUE-3-1024x648.jpg" alt="Lago Coatepeque">
+              </li>
+              <li>
+                  <img src="img/lago-de-coatepeque.jpg" alt="Lago Coatepeque">
+              </li>
+              <li>
+                  <img src="img/lake-coatepeque.jpg" alt="Lago Coatepeque">
+              </li>
+          </ul>
+      </div>
   </div>
-
+  
+  <section id="ReservaCupo">
+      <h2 id="em">RESERVA TU CUPO</h2>
+      <div class="contenido">
+          <form class="formTour" action="">
+              <label for="name">Nombre:</label>
+              <input type="text" id="name" placeholder="Nombre:" required><br>
+              <label for="correo">Correo:</label>
+              <input type="email" id="correo" placeholder="Correo:" required><br>
+              <label for="phone">Teléfono:</label>
+              <input type="tel" id="phone" placeholder="Teléfono" required><br>
+              <label for="metodoPago">Método de pago:</label>
+              <select id="metodoPago" required>
+                  <option value="Tarjeta">Tarjeta</option>
+                  <option value="Efectivo">Efectivo</option>
+                  <option value="Bitcoin">Bitcoin</option>
+              </select>
+              <br>
+              <input type="submit" value="Enviar" class="enviar">
+          </form>
+      </div>
+  </section>
+  
+  <div class="voting-carousel">
+      <h2 class="ot">OFERTAS TURÍSTICAS</h2>
+      <div class="carousel-slide">
+          <label for="option1"><img src="img/GUANACOS-LAGO-DE-COATEPEQUE-3-1024x648.jpg" alt="Opción 1"></label>
+      </div>
+      <div class="carousel-slide">
+          <label for="option2"><img src="img/lago-de-coatepeque.jpg" alt="Opción 2"></label>
+      </div>
+      <div class="carousel-slide">
+          <label for="option3"><img src="img/lake-coatepeque.jpg" alt="Opción 3"></label>
+      </div>
+      <div class="carousel-slide">
+          <label for="option4"><img src="img/maxresdefault.jpg" alt="Opción 4"></label>
+      </div>
+      <button class="vote-btn">VOTAR</button>
+  </div>
 
 
     <footer>

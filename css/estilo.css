@@ -131,7 +131,7 @@ ul, ol{
 
 .menu.active {
     display: flex;
-    background-color: #961b1e;
+    background-color: #a5a3a3;
     height: 300px;
 }
 
@@ -190,7 +190,7 @@ ul, ol{
     .menu a {
         padding: 10px 0;
         font-size: 18px;
-        color: white;
+        color: rgb(0, 0, 0);
         text-decoration: none;
     }
 
@@ -235,7 +235,7 @@ ul, ol{
     .menu a {
         padding: 10px 0;
         font-size: 18px;
-        color: white;
+        color: rgb(0, 0, 0);
         text-decoration: none;
     }
 
@@ -247,9 +247,6 @@ ul, ol{
         z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
     }
 }
-
-
-
 
 .caja{
     display: flex;
@@ -377,13 +374,13 @@ ul, ol{
     width:300px;
 }
 
-
 /**********************Explora nuestros destinos*********************/
 .video-container {
-    text-align: center; 
-  }
-  
-  #expl {
+    text-align: center;
+    padding: 20px;
+}
+
+#expl {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
@@ -392,22 +389,34 @@ ul, ol{
     border-bottom: 3px solid rgb(203, 0, 0);
     border-radius: 10px;
     padding: 20px;
-    margin: 40px auto; 
-    max-width: 50%; 
-  }
-  
-  .video {
-    display: inline-block; 
-    width: 45%; 
-    margin: 10px; 
-  }
-  
-  .video iframe {
+    margin: 40px auto;
+    max-width: 50%;
+}
+
+.video {
+    display: inline-block;
+    width: 45%;
+    margin: 10px;
+}
+
+.video iframe {
     width: 100%;
     height: 200px;
     border-radius: 20px;
     border: 4px solid #141D45;
-  }
+}
+
+@media (max-width: 768px) {
+    .video {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #expl {
+        max-width: 90%;
+        font-size: 20px;
+    }
+}
 /*------------------------------------*/
 
 /*Próximo Tour*/
@@ -421,11 +430,12 @@ ul, ol{
     border-radius: 20px;
     border: 4px solid #141D45;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  .pt {
+}
+
+.pt {
     background-color: #141D45;
     display: flex;
     justify-content: center;
@@ -434,66 +444,63 @@ ul, ol{
     color: white;
     font-weight: bold;
     border-radius: 10px;
-    font-size: 24px; 
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .tour-details {
+    font-size: 24px;
+    margin: 0 auto;
+}
+
+.tour-details {
     flex: 1;
-    padding-left: 30px;
-    text-align: center; 
-    margin-left: 50px;
-  }
-  
-  .tour-info {
-    margin-top: 20px; 
-    margin-bottom: 15px;
-    text-align: center; 
-  }
-  
-  .tour-info p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tour-info p {
     margin-top: 10px;
     line-height: 1.5;
     font-weight: bold;
-    font-size: 16px; 
-  }
-  
-  .slider-box{
-    width: 80%; 
-    max-width: 600px; 
-    margin: 30px auto; 
+    font-size: 16px;
+}
+
+.slider-box {
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
     overflow: hidden;
-  }
-  
-  .slider-box ul{
+}
+
+.slider-box ul {
     display: flex;
     padding: 0;
-    width: 300%; 
+    width: 300%;
     animation: slide 10s infinite alternate ease-in-out;
-  }
-  
-  .slider-box li{
-    width: 80%;
+}
+
+.slider-box li {
+    width: 100%;
     list-style: none;
-    position: relative;
-  }
-  
-  .slider-box img{
-    width: 80%;
-  }
-  
-  @keyframes slide{
-    0% {margin-left: 0%;}
-    20% {margin-left: 0%;}
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
-  }
-  
+}
+
+.slider-box img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0%, 20% {margin-left: 0%;}
+    25%, 45% {margin-left: -100%;}
+    50%, 70% {margin-left: -200%;}
+    75%, 100% {margin-left: -300%;}
+}
+
+@media (max-width: 768px) {
+    .tour-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .slider-box img {
+        width: 100%;
+    }
+}
 /*------------------------------------*/
 
 /*Reserva tu cupo*/
@@ -506,9 +513,9 @@ ul, ol{
     margin-right: 5%;
     border-radius: 20px;
     border: 4px solid #141D45;
-  }
+}
 
-  #em{
+#em {
     text-align: center;
     background-color: rgb(20, 29, 69);
     border-bottom: 3px solid rgb(203, 0, 0);
@@ -522,20 +529,21 @@ ul, ol{
 
 .contenido {
     padding-left: 12em;
+    padding-right: 12em;
 }
 
 .formTour {
-    max-width: 900px; 
-    margin-left: auto; 
+    max-width: 900px;
+    margin-left: auto;
     margin-right: auto;
-    display: flex; 
-    flex-wrap: wrap; 
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 60px;
 }
 
 label {
     font-family: "Open Sans", sans-serif;
-    width: 100px;
+    width: 100%;
     margin-right: 10px;
     margin-bottom: 5px;
     font-weight: bold;
@@ -546,7 +554,7 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 select {
-    width: 80%; 
+    width: 100%;
     padding: 10px 20px;
     margin-bottom: 15px;
     border: none;
@@ -561,10 +569,9 @@ select {
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
-    margin-left: 10px;
     cursor: pointer;
-    display: block; 
-    width: 93%; 
+    display: block;
+    width: 100%;
     margin-top: 15px;
 }
 
@@ -573,20 +580,25 @@ select {
     transition: all .5s ease-in-out;
 }
 
+@media (max-width: 768px) {
+    .contenido {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
 /*------------------------------------*/
 
-
-/*Ofertas Turisticas*/
+/*Ofertas Turísticas*/
 .voting-carousel {
     border: 2px solid #ccc;
     border-radius: 10px;
-    width: 50%;
+    width: 80%;
     margin: 40px auto;
     overflow: hidden;
     background-color: #ccc;
-  }
+}
 
-  .ot{
+.ot {
     margin-top: 40px;
     padding: 20px;
     color: white;
@@ -597,21 +609,23 @@ select {
     margin-right: 5%;
     border-radius: 20px;
     border: 4px solid #141D45;
-  }
-  
-  .carousel-slide {
+}
+
+.carousel-slide {
     display: none;
-  }
-  
-  .carousel-slide img {
+    text-align: center;
+}
+
+.carousel-slide img {
     margin-top: 20px;
-    margin-left: 120px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
     width: 70%;
     height: auto;
-  }
-  
-  .vote-btn {
+}
+
+.vote-btn {
     background-color: #141D45;
     color: white;
     border: none;
@@ -623,12 +637,23 @@ select {
     font-size: 16px;
     cursor: pointer;
     margin: 0 auto 20px;
-  }
-  
-  .vote-btn:hover {
+}
+
+.vote-btn:hover {
     background-color: #961b1e;
     transition: all .5s ease-in-out;
-  }
+}
+
+@media (max-width: 768px) {
+    .voting-carousel {
+        width: 100%;
+    }
+
+    .carousel-slide img {
+        width: 90%;
+    }
+}
+
 /*------------------------------------*/
 
 
