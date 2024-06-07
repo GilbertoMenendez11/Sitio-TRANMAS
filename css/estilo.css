@@ -286,7 +286,7 @@ ul, ol{
 
 
 .cardMision, .cardVision, .cardValores{
-    height: 350px;
+    height: 450px;
     display: flex;
     padding: 2em;
     flex-direction: column;
