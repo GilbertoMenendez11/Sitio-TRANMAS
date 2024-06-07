@@ -39,6 +39,13 @@ p{
     font-size: 15px;
 }
 
+@media (max-width: 768px) {
+    .p {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -295,6 +302,13 @@ ul, ol{
     text-align: center;
     line-height: 30px;
     /**background-color: white;*//
+}
+
+@media (max-width: 768px) {
+    .cardMision {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
 }
 
 
