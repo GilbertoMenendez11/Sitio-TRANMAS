@@ -707,7 +707,7 @@ h4 {
      display: flex;
      padding: 0;
      width: 300%;
-     animation: slide 10s infinite alternate ease-in-out; 
+      
 }
 
 .galeri li{
@@ -727,7 +727,7 @@ h4 {
     display: flex;
     padding: 0;
     width: 300%; 
-    animation: slide 10s infinite alternate ease-in-out;
+    
 }
 
 #imagenes li{
@@ -793,16 +793,7 @@ p{
 }
 
 
- @keyframes slide{
-    0% {margin-left: 0%;}
-    20% {margin-left: 0%;}
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
-  }
+ 
 
 /* Main container for the gallery */
 .galeri {
@@ -859,18 +850,14 @@ p{
 }
 
 /* Container for the route images */
-.route-images {
-    width: 100%;
-    margin: 30px auto;
-    overflow: hidden;
-}
+
 
 /* List styling for images */
 .route-images ul {
     display: flex;
     padding: 0;
     width: 100%;
-    animation: slide 10s infinite alternate ease-in-out;
+   
     list-style: none;
     margin: 0;
 }
@@ -893,16 +880,7 @@ p{
 }
 
 /* Keyframes for sliding animation */
-@keyframes slide {
-    0% { margin-left: 0%; }
-    20% { margin-left: 0%; }
-    25% { margin-left: -100%; }
-    45% { margin-left: -100%; }
-    50% { margin-left: -200%; }
-    70% { margin-left: -200%; }
-    75% { margin-left: -300%; }
-    100% { margin-left: -300%; }
-}
+
 
 /* Media queries for responsiveness */
 @media (max-width: 991px) {
