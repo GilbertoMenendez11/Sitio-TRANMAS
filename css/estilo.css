@@ -1142,6 +1142,41 @@ p{
         text-decoration: none;
     }
 
+    /*.cajonQuienes p {
+        padding: 10px 0;
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+
+    .cajonQuienes h1 {
+        padding: 10px 0;
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }*/
+
+    .cardMision {
+		display: block;
+		height: auto !important;
+        width: auto !important;
+        margin: 15px 0;
+	}
+
+    .cardVision {
+		display: block;
+		height: auto !important;
+        width: auto !important;
+        margin: 15px 0;
+	}
+
+    .cardValores {
+		display: block;
+		height: auto !important;
+        width: auto !important;
+        margin: 15px 0;
+	}
+
     .menu-toggle {
         display: block;
         position: absolute;
@@ -1162,6 +1197,28 @@ p{
 		display: block;
 		height: auto !important;
 	}
+ 
+    .cardMision {
+		display: block;
+		height: auto !important;
+        width: auto !important;
+        margin: 15px 0;
+	}
+
+    .cardVision {
+		display: block;
+		height: auto !important;
+        width: auto !important;
+        margin: 15px 0;
+	}
+
+    .cardValores {
+		display: block;
+		height: auto !important;
+        width: auto !important;
+        margin: 15px 0;
+	}
+
 	.colclass-3 {
 		width: 80% !important;
 		margin: 5% 10%;
@@ -1218,6 +1275,7 @@ p{
     }
 
 }
+
 
 /*1920×1080 (escritorio grande)*/
 @media only screen and (max-width: 1080px) {
