@@ -857,18 +857,8 @@ p{
     border-radius: 10px;
     margin-left: 25%;
     padding: 20px;
-    
     width: 1000px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-  }
-  
-  label2 {
-    color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
-    font-size:xx-large;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
+
   }
   
   input[type="date"],
@@ -898,12 +888,6 @@ p{
     cursor: pointer;
     font-weight: bold;
   }
-  input[type="submit"]{
-    width: 150px;
-    margin-left: 25%;
-    
-  }
-  
   input[type="submit"]:hover {
     background-color:  #961b1e; 
   }
@@ -914,10 +898,7 @@ p{
     border-color: #141D45; 
     box-shadow: 0 0 5px  #961b1e; 
   }
-  
-  ::placeholder {
-    color: #aaaaaa; 
-  }
+
   @media screen and (max-width: 700px) {
      .containerviajes {
       flex-direction: column;
@@ -942,6 +923,12 @@ p{
       padding: 15px;
     }
     
+    @media (max-width: 576px) {
+        .containerviajes {
+          width: 95%;
+          padding: 10px;
+        }
+    
     label {
       font-size: large; /* Ajusta el tamaño de fuente en pantallas más pequeñas */
     }
@@ -951,11 +938,6 @@ p{
     }
   }
   
-  @media (max-width: 576px) {
-    .containerviajes {
-      width: 95%;
-      padding: 10px;
-    }
     
     label {
       font-size: medium; /* Ajusta aún más el tamaño de fuente */
