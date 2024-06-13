@@ -313,7 +313,7 @@ ul, ol{
     margin: 10px;
 }
 
-.video iframe {
+.video video {
     width: 100%;
     height: 450px;
     border-radius: 20px;
