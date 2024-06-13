@@ -407,8 +407,8 @@ ul, ol{
 
 @media (max-width: 768px) {
     .tour-container {
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
     .slider-box img {
