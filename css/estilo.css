@@ -1326,6 +1326,12 @@ p{
 		height: 300px;
 	}
 
+    .cajonQuienes {
+		height: auto;
+		padding: 2em;
+        margin: auto;
+    }
+
     .cardValores {
 		display: block;
 		height: auto !important;
