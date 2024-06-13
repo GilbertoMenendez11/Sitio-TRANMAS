@@ -386,12 +386,12 @@ ul, ol{
     display: flex;
     padding: 0;
     width: 300%;
-    animation: slide 5s ease-in-out infinite;
+    animation: slide 5s ease-in-out infinite; /*la duración de la animación es de 5 segundos. Infinite: que la animacion se repetirá infinitamente*/
 }
 
 .slider-box li {
     width: 100%;
-    list-style: none;
+    list-style: none; /*eliminar los estilos de lista predeterminados de los elementos de una lista*/
 }
 
 .slider-box img {
@@ -496,7 +496,6 @@ label {
     border-radius: 10px;
     width: 80%;
     margin: 40px auto;
-    overflow: hidden;
     background-color: #ccc;
 }
 
@@ -514,7 +513,6 @@ label {
 }
 
 .carousel-slide {
-    display: none;
     text-align: center;
 }
 
@@ -545,7 +543,6 @@ label {
     background-color: #961b1e;
     transition: all .5s ease-in-out;
 }
-
 
 
 /*------------------------------------*/

@@ -1,14 +1,13 @@
 /*Menu Hamburguesa */
 function toggleMenu() {
-  var menu = document.querySelector('.menu');
-  menu.classList.toggle('active');
-}
-
-let slideIndex = 0;
+  var menu = document.querySelector('.menu'); /*.querySelector('.menu') busca un elemento que tenga la clase menu. */
+  menu.classList.toggle('active');/*es una propiedad que nos da acceso a la lista de clases del elemento seleccionado. active: se usa para mostrar u ocultar un menú. */
+} 
+var slideIndex = 0;
 carousel();
 
 function carousel() {
-  let slides = document.getElementsByClassName("carousel-slide");
+  var slides = document.getElementsByClassName("carousel-slide");
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
