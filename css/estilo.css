@@ -313,7 +313,7 @@ ul, ol{
     margin: 10px;
 }
 
-.video iframe {
+.video video {
     width: 100%;
     height: 450px;
     border-radius: 20px;
@@ -386,12 +386,12 @@ ul, ol{
     display: flex;
     padding: 0;
     width: 300%;
-    animation: slide 10s infinite alternate ease-in-out;
+    animation: slide 5s ease-in-out infinite; /*la duración de la animación es de 5 segundos. Infinite: que la animacion se repetirá infinitamente*/
 }
 
 .slider-box li {
     width: 100%;
-    list-style: none;
+    list-style: none; /*eliminar los estilos de lista predeterminados de los elementos de una lista*/
 }
 
 .slider-box img {
@@ -407,8 +407,8 @@ ul, ol{
 
 @media (max-width: 768px) {
     .tour-container {
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
     .slider-box img {
@@ -496,7 +496,6 @@ label {
     border-radius: 10px;
     width: 80%;
     margin: 40px auto;
-    overflow: hidden;
     background-color: #ccc;
 }
 
@@ -514,7 +513,6 @@ label {
 }
 
 .carousel-slide {
-    display: none;
     text-align: center;
 }
 
@@ -545,7 +543,6 @@ label {
     background-color: #961b1e;
     transition: all .5s ease-in-out;
 }
-
 
 
 /*------------------------------------*/
@@ -591,9 +588,7 @@ h4 {
     width: 1100px;
     height: auto;
     margin: 50px auto 0;
-    overflow: hidden;
-    
-    
+    overflow: hidden;    
 }
 
 .galeri ul{
@@ -1218,6 +1213,10 @@ p{
         margin: 15px 0;
 	}
 
+    .cardMision p{
+        font-size: medium;
+    }
+
     .cardVision {
 		display: block;
 		height: auto !important;
@@ -1225,12 +1224,20 @@ p{
         margin: 15px 0;
 	}
 
+    .cardVision p{
+        font-size: medium;
+    }
+
     .cardValores {
 		display: block;
 		height: auto !important;
         width: auto !important;
         margin: 15px 0;
 	}
+
+    .cardValores p{
+        font-size: medium;
+    }
 
 	.colclass-3 {
 		width: 80% !important;
@@ -1286,6 +1293,40 @@ p{
         padding: 5% 10%;
 		height: auto;
     }
+    .cardValores {
+		display: block;
+		height: auto !important;
+        width: auto !important;
+        margin: 15px 0;
+	}
+
+    .cardValores p{
+        font-size: larger;
+    }
+
+
+    .cardMision {
+		display: block;
+		height: auto !important;
+        width: auto !important;
+        margin: 15px 0;
+	}
+
+    .cardMision p{
+        font-size: larger;
+    }
+
+
+    .cardVision {
+		display: block;
+		height: auto !important;
+        width: auto !important;
+        margin: 15px 0;
+	}
+
+    .cardVision p{
+        font-size: larger;
+    }
 
 }
 
@@ -1311,6 +1352,39 @@ p{
 	.tam3{
 		width: 200px;
 		height: 300px;
+	}
+
+    .cajonQuienes {
+		height: auto;
+		padding: 2em;
+        margin: auto;
+    }
+
+    .cardValores {
+		display: block;
+		height: auto !important;
+        width: auto !important;
+        margin: 15px 0;
+        margin-left: 15px;
+        margin-right: 15px;
+	}
+
+    .cardMision {
+		display: block;
+		height: auto !important;
+        width: auto !important;
+        margin: 15px 0;
+        margin-left: 15px;
+        margin-right: 15px;
+	}
+
+    .cardVision {
+		display: block;
+		height: auto !important;
+        width: auto !important;
+        margin: 15px 0;
+        margin-left: 15px;
+        margin-right: 15px;
 	}
 
 }
