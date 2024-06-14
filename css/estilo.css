@@ -621,7 +621,7 @@ h4 {
     display: flex;
     padding: 0;
     width: 300%; 
-    animation: slide 10s infinite alternate ease-in-out;
+
 }
 
 #imagenes li{
@@ -633,7 +633,9 @@ h4 {
   #imagenes img{
     width: 90%;
         width: 500px;  
-        height: 350px;  
+        height: 350px;
+        justify-content: center;
+    display: flex;  
     
   }
 
@@ -686,18 +688,7 @@ p{
     font-size: 23px;
 }
 
-
- @keyframes slide{
-    0% {margin-left: 0%;}
-    20% {margin-left: 0%;}
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
-  }
-
+ 
 /* Main container for the gallery */
 .galeri {
     width: 100%;
@@ -706,6 +697,7 @@ p{
     overflow: hidden;
     padding: 0 15px;
     box-sizing: border-box;
+
 }
 
 /* Container for each route */
@@ -721,6 +713,9 @@ p{
     align-items: center;
     box-sizing: border-box;
     margin: 0 auto 40px auto;
+    justify-content: center;
+    display: flex;
+    
 }
 
 /* Route information styling */
@@ -754,9 +749,16 @@ p{
 
 /* Container for the route images */
 .route-images {
-    width: 100%;
+     width: 100%;
     margin: 30px auto;
     overflow: hidden;
+
+    justify-content: center;
+    display: flex;
+    max-width: 600px;
+
+    
+
 }
 
 /* List styling for images */
@@ -764,9 +766,9 @@ p{
     display: flex;
     padding: 0;
     width: 100%;
-    animation: slide 10s infinite alternate ease-in-out;
-    list-style: none;
-    margin: 0;
+   animation: slide 10s infinite alternate ease-in-out;
+   
+
 }
 
 /* List item styling for images */
@@ -776,20 +778,49 @@ p{
     position: relative;
     margin: 0 10px;
     box-sizing: border-box;
+    display: flex ;
+    width: 100%;
+    list-style: none;
+
+
+    
 }
 
 /* Image styling */
 .route-images img {
-    width: 100%;
+    
+     width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
     max-height: 225px;
     min-height: 225px;
+
+
+}
+
+
+
+.route-images ul {
+    display: flex;
+    padding: 0;
+    width: 100%;
+    animation: slide 10s infinite alternate ease-in-out;
+}
+
+.route-images li {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.route-images img {
+    width: 100%;
 }
 
 /* Keyframes for sliding animation */
-@keyframes slide {
+ @keyframes slide {
     0% { margin-left: 0%; }
     20% { margin-left: 0%; }
     25% { margin-left: -100%; }
@@ -798,8 +829,8 @@ p{
     70% { margin-left: -200%; }
     75% { margin-left: -300%; }
     100% { margin-left: -300%; }
-}
-
+} 
+ 
 /* Media queries for responsiveness */
 @media (max-width: 991px) {
     .route-info h2 {
